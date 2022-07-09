@@ -24,8 +24,8 @@ first problem here...
 npm ERR! Missing script: "start"
 
 tried this solution: https://forum.codewithmosh.com/t/missing-start-script/8089
-npm uninstall -g create react-app
-remove the react-app folder completely
-npx create-react-app react-app (should show “Happy Hacking!” at end of install if it completed correctly and you should see in your react-app folder, subfolders node_modules, public and src.)
-cd react-app
+npm uninstall -g create react-app  
+remove the react-app folder completely  
+npx create-react-app react-app (should show “Happy Hacking!” at end of install if it completed correctly and you should see in your react-app folder, subfolders node_modules, public and src.)  
+cd react-app  
 npm start (should show basic web page)
