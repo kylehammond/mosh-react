@@ -15,9 +15,9 @@ recommended: enable formatting on save in vscode enabled
 
 ## create the first app
 
-run
-create-react-app react-app
-cd react-app
+run these commands (see error below first)
+create-react-app react-app  
+cd react-app  
 npm start
 
 first problem here...
