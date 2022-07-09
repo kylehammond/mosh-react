@@ -13,3 +13,5 @@ public - html with react root
 src - components
 
 babel will turn all of the es6 and JSX stuff to es5
+
+jsx expression compiles to React.createElement()

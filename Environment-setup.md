@@ -30,3 +30,7 @@ remove the react-app folder completely
 npx create-react-app react-app (should show “Happy Hacking!” at end of install if it completed correctly and you should see in your react-app folder, subfolders node_modules, public and src.)  
 cd react-app  
 npm start (should show basic web page)
+
+## IMPORTANT
+
+whenever running npm start you need to make sure that the path is case correct otherwise it will throw an error
