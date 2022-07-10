@@ -50,3 +50,11 @@ npm start
 
 npm i bootstrap@4.1.1
 font of <code> component should change
+
+# create vidly
+
+in repo root folder
+npx create-react-app vidly
+cd vidly
+npm i bootstrap@4.1.1 font-awesome@4.7.0
+npm start
