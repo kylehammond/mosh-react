@@ -13,7 +13,7 @@ install vscode extensions
 
 recommended: enable formatting on save in vscode enabled
 
-## create the first app
+## create react-app
 
 run these commands (see error below first)
 create-react-app react-app  
@@ -38,4 +38,14 @@ whenever running npm start you need to make sure that the path is case correct o
 ## npm warning
 
 I was getting a warning about global prefix and used this to fix it - probably not important but cleaned up the console
-https://stackoverflow.com/questions/72401421/message-npm-warn-config-global-global-local-are-deprecated-use-loc
+https://stackoverflow.com/questions/72401421/
+message-npm-warn-config-global-global-local-are-deprecated-use-loc
+
+# create counter-app
+
+in repo root folder
+npx create-react-app counter-app
+cd counter-app
+npm start
+
+npm i bootstrap@4.1.1
