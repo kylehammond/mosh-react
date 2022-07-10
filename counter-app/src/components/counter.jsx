@@ -16,7 +16,7 @@ class Counter extends Component {
   //   console.log("Increment Clicked", this.state.count); // no access to this in this function
   // }
 
-  // another way to bind event handlers - using arrow function
+  // another way to bind event handlers - using arrow function - not sure this is recommended as he says its experimental and the docs say to bind in constructor
   handleIncrement = () => {
     this.state.count++;
     console.log("Increment Clicked", this.state.count); // no access to this in this function
