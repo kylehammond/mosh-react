@@ -49,3 +49,4 @@ cd counter-app
 npm start
 
 npm i bootstrap@4.1.1
+font of <code> component should change
