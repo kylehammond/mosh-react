@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getMovies, deleteMovie } from "../services/fakeMovieService";
+import { getMovies } from "../services/fakeMovieService";
 
 class Movies extends Component {
   state = {
@@ -7,25 +7,18 @@ class Movies extends Component {
   };
 
   handleDelete = (movie) => {
-    deleteMovie(movie._id);
-    this.setState((this.movies = getMovies()));
+    const movies = this.state.movies.filter((m) => m._id !== movie._id);
+    this.setState({ movies });
   };
 
-  moviesExist() {
-    return this.state.movies.length > 0;
-  }
+  render() {
+    const { length: count } = this.state.movies;
 
-  formatCountMessage() {
-    return this.moviesExist() ? (
-      <h4>Showing {this.state.movies.length} movies in the database.</h4>
-    ) : (
-      <h4>There are no movies in the database.</h4>
-    );
-  }
+    if (count === 0) return <p> There are no movies in the database.</p>;
 
-  formatMoviesList() {
-    if (this.moviesExist())
-      return (
+    return (
+      <React.Fragment>
+        <p>Showing {count} movies in the database.</p>
         <table className="table">
           <thead>
             <tr>
@@ -55,15 +48,7 @@ class Movies extends Component {
             ))}
           </tbody>
         </table>
-      );
-  }
-
-  render() {
-    return (
-      <div>
-        {this.formatCountMessage()}
-        {this.formatMoviesList()}
-      </div>
+      </React.Fragment>
     );
   }
 }
