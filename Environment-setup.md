@@ -34,3 +34,8 @@ npm start (should show basic web page)
 ## IMPORTANT
 
 whenever running npm start you need to make sure that the path is case correct otherwise it will throw an error
+
+## npm warning
+
+I was getting a warning about global prefix and used this to fix it - probably not important but cleaned up the console
+https://stackoverflow.com/questions/72401421/message-npm-warn-config-global-global-local-are-deprecated-use-loc
