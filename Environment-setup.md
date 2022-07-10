@@ -58,3 +58,7 @@ npx create-react-app vidly
 cd vidly
 npm i bootstrap@4.1.1 font-awesome@4.7.0
 npm start
+
+add to index.js
+import "bootstrap/dist/css/bootstrap.css";
+import "font-awesome/css/font-awesome.css";
