@@ -11,9 +11,9 @@ class Counter extends Component {
   };
 
   // messy way to do event args
-  doHandleIncrement = () => {
-    this.handleIncrement({ id: 1 });
-  };
+  // doHandleIncrement = () => {
+  //   this.handleIncrement({ id: 1 });
+  // };
 
   render() {
     return (
@@ -21,7 +21,7 @@ class Counter extends Component {
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button
           // onClick={this.doHandleIncrement}
-          onClick={() => this.handleIncrement(product)} // better way to do it?
+          onClick={(product) => this.handleIncrement(product)} // better way to do it .. NOTE:  Mosh did not include product in the first parens.. had to look this up
           className="{btn btn-secondary btn-sm}"
         >
           Increment
