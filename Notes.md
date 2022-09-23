@@ -22,3 +22,6 @@ can also access via this.props.children with react elements instead of data
 
 props includes data we pass to a component  (public) - props values can't be changed 
 state is data that is only local to a component (internal)
+
+rule of thumb:  the component that owns a piece of the state should be the one modifying it
+you should raise an event in the child to the parent to handle
