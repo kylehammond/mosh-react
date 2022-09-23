@@ -15,3 +15,10 @@ src - components
 babel will turn all of the es6 and JSX stuff to es5
 
 jsx expression compiles to React.createElement()
+
+components are given props during their definition/creation
+props are accessible via this.props in the child component 
+can also access via this.props.children with react elements instead of data
+
+props includes data we pass to a component  (public)
+state is data that is only local to a component (internal)
