@@ -42,4 +42,5 @@ lifecycle hooks
   - hooks: componentWillUnmount
 
 
-  
+When rendering, you rerender the whole component tree but you don't update the entire dom
+- React compares virtual dom with real dom and finds what needs to update and returns a react element
