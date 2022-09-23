@@ -30,3 +30,16 @@ state of a child is only init once when created
 
 controlled component - doesn't have its own local state and raises events to parent
 
+lifecycle hooks
+- mount
+  - instance of a component created and inserted into dom
+  - hooks: constructor, render, componentDidMount (in order)
+- update
+  - state or props get changed
+  - hooks: render componentDidUpdate
+- unmount
+  - component removed from dom
+  - hooks: componentWillUnmount
+
+
+  
