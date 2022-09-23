@@ -29,3 +29,4 @@ you should raise an event in the child to the parent to handle
 state of a child is only init once when created
 
 controlled component - doesn't have its own local state and raises events to parent
+
